@@ -35,8 +35,9 @@
 .grid-template-area {
   display: grid;
   grid-template-areas:
-    "item1 item2"
-    "item3 item4";
+    "item1 item1 item2 item2 item2 item2"
+    "item3 item3 item3 item4 item4 item4"
+    "item5 item5 item6 item4 item4 item4";
   gap: 10px;
 }
 
@@ -54,6 +55,14 @@
 
 .area-item-4 {
   grid-area: item4;
+}
+
+.area-item-5 {
+  grid-area: item5;
+}
+
+.area-item-6 {
+  grid-area: item6;
 }
 
 /* Combined Display Layout */
@@ -98,4 +107,12 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+code {
+  background-color: rgb(53, 34, 34);
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 5px;
 }
