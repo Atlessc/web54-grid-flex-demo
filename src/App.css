@@ -1,0 +1,101 @@
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/* App.css */
+/* App.css */
+
+/* Flexbox Layouts */
+.flex-row {
+  display: flex;
+  gap: 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Grid Layouts */
+.grid-template-column {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.grid-template-row {
+  display: grid;
+  grid-template-rows: repeat(4, 50px);
+  gap: 10px;
+}
+
+.grid-template-area {
+  display: grid;
+  grid-template-areas:
+    "item1 item2"
+    "item3 item4";
+  gap: 10px;
+}
+
+.area-item-1 {
+  grid-area: item1;
+}
+
+.area-item-2 {
+  grid-area: item2;
+}
+
+.area-item-3 {
+  grid-area: item3;
+}
+
+.area-item-4 {
+  grid-area: item4;
+}
+
+/* Combined Display Layout */
+.combined-display {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Flex Row within Combined Layout */
+.combined-flex-row {
+  display: flex;
+  gap: 10px;
+}
+
+/* Grid Column within Combined Layout */
+.combined-grid-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Grid Area within Combined Layout */
+.combined-grid-area {
+  display: grid;
+  grid-template-areas:
+    "area1 area2"
+    "flex flex";
+  gap: 10px;
+}
+
+.area1 {
+  grid-area: area1;
+}
+
+.area2 {
+  grid-area: area2;
+}
+
+/* Flex Column Inside Grid Area */
+.flex-column-inside-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
